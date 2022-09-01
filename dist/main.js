@@ -5,11 +5,11 @@ const core_1 = require("@nestjs/core");
 const app_module_1 = require("./app.module");
 async function bootstrap() {
     const allowList = [
-        'http://fireking5997.com',
-        'http://www.fireking5997.com',
-        'http://localhost:3000',
+        'http://fireking5997.me',
+        'http://www.fireking5997.me',
+        'http://localhost:8080',
         process.env.BASE_URL,
-        `${process.env.BASE_URL}:3000`,
+        `${process.env.BASE_URL}:8080`,
     ];
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     app.enableCors({
