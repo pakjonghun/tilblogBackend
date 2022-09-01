@@ -16,6 +16,11 @@ export class AppController {
     return this.appService.getCategory();
   }
 
+  @Get('totalCount')
+  getTotalCount() {
+    return this.appService.getTotalCount();
+  }
+
   @Get(':id')
   getDetail(@Param('id') id: string) {
     return this.appService.getPost(id);

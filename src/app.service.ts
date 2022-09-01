@@ -14,7 +14,6 @@ export class AppService {
       sortKey,
       sortValue,
     });
-
     const skip = (page - 1) * perPage;
     const data = posts.slice(skip, skip + perPage);
     const totalCount = this.cacheStore.getTotalCount({ category, term });
@@ -42,5 +41,9 @@ export class AppService {
     });
 
     return Array.from(set);
+  }
+
+  getTotalCount() {
+    return this.cacheStore.getTotalCount({ category: '', term: '' });
   }
 }

@@ -8,5 +8,6 @@ export declare class AppController {
         totalCount: number;
     };
     getCategory(): unknown[];
+    getTotalCount(): number;
     getDetail(id: string): import("./Interfaces").Post;
 }

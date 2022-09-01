@@ -9,4 +9,5 @@ export declare class AppService {
     };
     getPost(id: string): import("./Interfaces").Post;
     getCategory(): unknown[];
+    getTotalCount(): number;
 }

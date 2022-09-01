@@ -26,6 +26,9 @@ let AppController = class AppController {
     getCategory() {
         return this.appService.getCategory();
     }
+    getTotalCount() {
+        return this.appService.getTotalCount();
+    }
     getDetail(id) {
         return this.appService.getPost(id);
     }
@@ -43,6 +46,12 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getCategory", null);
+__decorate([
+    (0, common_1.Get)('totalCount'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], AppController.prototype, "getTotalCount", null);
 __decorate([
     (0, common_1.Get)(':id'),
     __param(0, (0, common_1.Param)('id')),
