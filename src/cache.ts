@@ -6,7 +6,7 @@ import * as matter from 'gray-matter';
 
 @Injectable()
 export class CacheStore {
-  private postPath = resolve(__dirname, '..', '..', 'til');
+  private postPath = resolve(__dirname, '..', 'til');
   private fileList: string[] = [];
   private postList: Record<string, Post[]> = {};
 
