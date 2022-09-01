@@ -13,7 +13,7 @@ const path_1 = require("path");
 const matter = require("gray-matter");
 let CacheStore = class CacheStore {
     constructor() {
-        this.postPath = (0, path_1.resolve)(__dirname, '..', '..', '..', '..', 'til', 'til');
+        this.postPath = (0, path_1.resolve)(__dirname, '..', '..', 'til');
         this.fileList = [];
         this.postList = {};
     }
